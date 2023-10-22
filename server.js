@@ -7,7 +7,7 @@ const fs = require('fs');
 app.get('/listUsers',(req,res)=>{
     fs.readFile(__dirname+'/'+"users.json","utf8",(err,data)=>{
         console.log(data)
-        res.end(data)
+        
     });
 })
 
